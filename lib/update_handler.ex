@@ -1,5 +1,5 @@
 
-defmodule WebRequestHandler do
+defmodule UpdateHandler do
   @moduledoc """
    A cowboy handler for serving a single dynamic wepbage. No templates are used; the
    HTML is all generated within the handler.
@@ -78,7 +78,7 @@ defmodule WebRequestHandler do
      <body>
        <div id='main'>
          <h1>Dynamic Page Example</h1>
-     
+
          <h2>Current Time (:erlang.now)</h2>
          <p><span class='time'> #{inspect(:erlang.now)}</span></p>
          <p>Reload this page to see the time change.</p>

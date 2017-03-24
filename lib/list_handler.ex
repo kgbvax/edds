@@ -73,7 +73,7 @@ defmodule ListHandler do
      """
      <html>
      <head>
-       <title>Elixir Cowboy loves you</title>
+       <title>Freifunk and Elixir Cowboy loves you.</title>
       </head>
      <body>
        <div id='main'>

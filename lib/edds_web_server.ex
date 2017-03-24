@@ -19,6 +19,8 @@ defmodule EddsWebServer do
   SEE ALSO: http://ninenines.eu/docs/en/cowboy/1.0/guide/getting_started/
   """
   def start(_type, _args) do
+    Store.init()
+
     dispatch_config = build_dispatch_config()
     { :ok, _ } = :cowboy.start_http(:http,
     100,
@@ -47,25 +49,13 @@ defmodule EddsWebServer do
     # names with different sets of routes. See "Compilation" in:
     #      http://ninenines.eu/docs/en/cowboy/1.0/guide/routing/
     :cowboy_router.compile([
-
       # :_ causes a match on all hostnames.  So, in this example we are treating
       # all hostnames the same. You'll probably only be accessing this
       # example with localhost:8080.
       { :_,
-
-      # The following list specifies all the routes for hosts matching the
-      # previous specification.  The list takes the form of tuples, each one
-      # being { PathMatch, Handler, Options}
        [
-      #  {"/foo", EddsWebServer.WebRequestHandler, [] }
-      #  ] }
-      #  ])
-
-          # Serve a dynamic page with a custom handler
-          # When a request is sent to "/dynamic", pass the request to the custom handler
-          # defined in module DynamicPageHandler.
-          {"/", WebRequestHandler, []}
-
+          {"/nic/update", UpdateHandler, []},
+          {"/", ListHandler, []}
        ]}
      ])
       end
