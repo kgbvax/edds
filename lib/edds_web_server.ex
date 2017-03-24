@@ -64,7 +64,7 @@ defmodule EddsWebServer do
           # Serve a dynamic page with a custom handler
           # When a request is sent to "/dynamic", pass the request to the custom handler
           # defined in module DynamicPageHandler.
-          {"/dynamic", DynamicPageHandler, []}
+          {"/", WebRequestHandler, []}
 
        ]}
      ])
