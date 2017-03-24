@@ -1,5 +1,7 @@
-%{"con_cache": {:hex, :con_cache, "0.12.0", "2d961aec219aa5a914473873f348f5a6088292dc69d5192a9d25f8a1e13e9905", [:mix], [{:exactor, "~> 2.2.0", [hex: :exactor, optional: false]}]},
+%{"amnesia": {:hex, :amnesia, "0.2.7", "ffc2221bf72da4cfafbbb497adf9cf7e52138f1333cec5836187a53f94ae0665", [:mix], [{:exquisite, "~> 0.1.7", [hex: :exquisite, optional: false]}]},
+  "con_cache": {:hex, :con_cache, "0.12.0", "2d961aec219aa5a914473873f348f5a6088292dc69d5192a9d25f8a1e13e9905", [:mix], [{:exactor, "~> 2.2.0", [hex: :exactor, optional: false]}]},
   "cowboy": {:hex, :cowboy, "1.0.4", "a324a8df9f2316c833a470d918aaf73ae894278b8aa6226ce7a9bf699388f878", [:make, :rebar], [{:cowlib, "~> 1.0.0", [hex: :cowlib, optional: false]}, {:ranch, "~> 1.0", [hex: :ranch, optional: false]}]},
   "cowlib": {:hex, :cowlib, "1.0.2", "9d769a1d062c9c3ac753096f868ca121e2730b9a377de23dec0f7e08b1df84ee", [:make], []},
   "exactor": {:hex, :exactor, "2.2.3", "a6972f43bb6160afeb73e1d8ab45ba604cd0ac8b5244c557093f6e92ce582786", [:mix], []},
+  "exquisite": {:hex, :exquisite, "0.1.8", "ee8f56aae477287ce5e7dfcbc163a420cccbb73e680a6d80a09203e9ef514fa4", [:mix], []},
   "ranch": {:hex, :ranch, "1.3.2", "e4965a144dc9fbe70e5c077c65e73c57165416a901bd02ea899cfd95aa890986", [:rebar3], []}}

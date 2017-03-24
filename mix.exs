@@ -29,7 +29,7 @@ defmodule Edds.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:con_cache, "~> 0.12.0"},
+    [{:amnesia,  "~>0.2.7" },
     { :cowboy, "~> 1.0.0" }]
   end
 end
