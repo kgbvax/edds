@@ -28,6 +28,6 @@ defmodule Edds.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:con_cache, "~> 0.12.0"}]
   end
 end
