@@ -25,7 +25,7 @@ defmodule EddsWebServer do
     [{:port, 8080}],
     [{ :env, [{:dispatch, dispatch_config}]}]
     )
-    
+
   end
 
   @doc """
@@ -56,13 +56,17 @@ defmodule EddsWebServer do
       # The following list specifies all the routes for hosts matching the
       # previous specification.  The list takes the form of tuples, each one
       # being { PathMatch, Handler, Options}
-      [
+       [
+      #  {"/foo", EddsWebServer.WebRequestHandler, [] }
+      #  ] }
+      #  ])
 
+          # Serve a dynamic page with a custom handler
+          # When a request is sent to "/dynamic", pass the request to the custom handler
+          # defined in module DynamicPageHandler.
+          {"/dynamic", DynamicPageHandler, []}
 
-        {"/", WebRequestHandler}
-
-
-        ]}
-        ])
+       ]}
+     ])
       end
     end

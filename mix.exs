@@ -30,6 +30,6 @@ defmodule Edds.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:con_cache, "~> 0.12.0"},
-    { :cowboy, github: "ninenines/cowboy", tag: "2.0.0-pre.3" }]
+    { :cowboy, "~> 1.0.0" }]
   end
 end
