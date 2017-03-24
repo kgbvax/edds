@@ -9,8 +9,11 @@ defmodule StoreTest do
   test "store_entry" do
     Store.put(%{ ip: "127.0.0.1", hostname: "localhost",
               description: "Localhost service"})
-    Store.lookup("localhost") |> IO.puts()
-    Store.lookup("barf")  |> IO.puts()
+    Store.lookup("localhost")
+    Store.put(%{ ip: "127.0.0.1", hostname: "localhost",
+              description: "Localhost service"})
+    
+    Store.lookup("localhost")
     :ok
   end
 

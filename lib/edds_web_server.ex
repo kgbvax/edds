@@ -19,12 +19,12 @@ defmodule EddsWebServer do
   SEE ALSO: http://ninenines.eu/docs/en/cowboy/1.0/guide/getting_started/
   """
   def start(_type, _args) do
-    Store.init()
+
 
     dispatch_config = build_dispatch_config()
     { :ok, _ } = :cowboy.start_http(:http,
     100,
-    [{:port, 8080}],
+    [{:port, 8081}],
     [{ :env, [{:dispatch, dispatch_config}]}]
     )
 

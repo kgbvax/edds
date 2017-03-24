@@ -14,7 +14,7 @@ defmodule Edds.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:cowboy],
+    [applications: [:cowboy, :ecto_mnesia],
     mod: { EddsWebServer, []},
     extra_applications: [:logger]]
   end
@@ -29,7 +29,7 @@ defmodule Edds.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:amnesia,  "~>0.2.7" },
+    [{:ecto_mnesia, "~> 0.7.1"},
     { :cowboy, "~> 1.0.0" }]
   end
 end
